@@ -8,48 +8,56 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <link rel="stylesheet" href="/styles/reset.css" type="text/css">
-  <link rel="stylesheet" href="/styles/style.css" type="text/css">
+  <link rel="stylesheet" href="styles/reset.css" type="text/css">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <script src="/script/script.js"></script> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
+    <main>
 
-  <header>
-    <div id="logo">
-      <img src="/images/logo.svg" alt="site-logo">
-    </div>
-  </header>
-  <main>
-    <div id="hero-mobile-image">
-      <img src="/images/hero-mobile.jpg" alt="mobile hero">
-    </div>
-    <div id="hero-desktop-image" class="d-none">
-      <img src="/images/hero-desktop.jpg" alt="desktop hero">
-    </div>
-    <section id="coming-soon">
+      <div id="logo-mobile">
+        <a href="#">
+          <img id="logo" src="/images/logo.svg" alt="site logo">
+        </a>
+      </div>
 
-        <h1><span>We're</span><br> coming soon</h1>
-  
-        <p>Hello fellow shoppers! We're currently building our new fashion store. 
-        Add your email below to stay up-to-date with announcements and our launch deals.
+      <div id="hero-mobile">
+        <img src="/images/hero-mobile.jpg" alt="girl looking into camera">
+      </div>
+
+      <div id="hero-desktop">
+        <img src="/images/hero-desktop.jpg" alt="">
+      </div>
+
+      <section class="coming-soon">
+
+        <div id="logo-desktop">
+          <a href="#">
+            <img id="logo" src="/images/logo.svg" alt="site logo">
+          </a>
+        </div>
+
+        <h1><span>We're</span> coming soon</h1>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-  
-       Email Address
 
-    </section>
-  </main>
+        <div class="email-input">
+          <input id="email" type="email" placeholder="Email Address">
+          <img id='error' src="/images/icon-error.svg" alt="email is invalid">
+          <button class="confirm" onclick="validate()">
+            <img src="/images/icon-arrow.svg" alt="arrow icon">
+          </button>
+        </div>
+
+        <p id="email-validation"></p>
+
+      </section>
+
+    </main>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Jakub Majcherczak</a>.
-    </p>
-  </footer>
 </body>
 </html>
